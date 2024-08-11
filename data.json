@@ -1,599 +1,599 @@
 {
-  "bookings": [
-    {
-      "id": "id-1723352349234-892",
-      "ufname": "Nikhil",
-      "ulname": "Chauhan",
-      "uemail": "nikhilchauhan3011@gmail.com",
-      "uphone": "9876543211",
-      "uage": "below18",
-      "uTicketType": "700",
-      "uTicketCount": 1,
-      "uCity": "Pune",
-      "eventName": "Jazz Night",
-      "eventTime": "2024-08-15T20:00:00",
-      "eventVenue": "Jazz Club",
-      "eventImage": "assets/images/imageTwo.jpg",
-      "eventLanguage": "English",
-      "paymentStatus": "pending"
-    },
-    {
-      "id": "id-1723353917210-783",
-      "ufname": "Nikhil",
-      "ulname": "Chauhan",
-      "uemail": "nikhilchauhan3011@gmail.com",
-      "uphone": "1123132131",
-      "uage": "18btwn35",
-      "uTicketType": "400",
-      "uTicketCount": 2,
-      "uCity": "Pune",
-      "eventName": "Classical Music Evening",
-      "eventTime": "2024-09-20T19:00:00",
-      "eventVenue": "Classical Music Hall",
-      "eventImage": "assets/images/patterns-by-angry-jalebi-62.png",
-      "eventLanguage": "English",
-      "paymentStatus": "paid"
-    },
-    {
-      "id": "id-1723354362717-731",
-      "ufname": "Nikhil",
-      "ulname": "Chauhan",
-      "uemail": "nikhilchauhan3011@gmail.com",
-      "uphone": "1123132131",
-      "uage": "below18",
-      "uTicketType": "700",
-      "uTicketCount": 2,
-      "uCity": "Delhi",
-      "eventName": "Jazz Night",
-      "eventTime": "2024-08-15T20:00:00",
-      "eventVenue": "Jazz Club",
-      "eventImage": "assets/images/imageTwo.jpg",
-      "eventLanguage": "English",
-      "paymentStatus": "paid"
-    },
-    {
-      "id": "id-1723355619506-361",
-      "ufname": "Nikhil",
-      "ulname": "Chauhan",
-      "uemail": "nikhilchauhan3011@gmail.com",
-      "uphone": "1123132131",
-      "uage": "18btwn35",
-      "uTicketType": "600",
-      "uTicketCount": 2,
-      "uCity": "Pune",
-      "eventName": "Pop Festival",
-      "eventTime": "2024-10-10T17:00:00",
-      "eventVenue": "Pop and Banging",
-      "eventImage": "assets/images/imageOne.jpg",
-      "eventLanguage": "English",
-      "paymentStatus": "paid"
-    },
-    {
-      "id": "id-1723355813290-200",
-      "ufname": "Nikhil",
-      "ulname": "Chauhan",
-      "uemail": "nikhilchauhan3011@gmail.com",
-      "uphone": "7677667676",
-      "uage": "below18",
-      "uTicketType": "700",
-      "uTicketCount": 2,
-      "uCity": "Delhi",
-      "eventName": "Jazz Night",
-      "eventTime": "2024-08-15T20:00:00",
-      "eventVenue": "Jazz Club",
-      "eventImage": "assets/images/imageTwo.jpg",
-      "eventLanguage": "English",
-      "paymentStatus": "pending"
-    }
-  ],
-  "members": [
-    {
-      "name": "Mr. Sandesh Tribhuvan",
-      "position": "Venue Cordinator",
-      "image": "assets/person.webp",
-      "id": "3fc5"
-    },
-    {
-      "name": "Mr. Anurag Maldhure",
-      "position": "Onsite Help and Support",
-      "image": "assets/person.webp",
-      "id": "26c4"
-    },
-    {
-      "name": "Mr. Nikhil Chauhan",
-      "position": "Social Media Manager",
-      "image": "assets/person.webp",
-      "id": "6117"
-    },
-    {
-      "name": "Mr. Suryansh Srijan",
-      "position": "Social Media Manager",
-      "image": "assets/person.webp",
-      "id": "d889"
-    }
-  ],
-  "events": [
-    {
-      "id": "1",
-      "name": "Rock Concert",
-      "time": "2024-07-01T18:00:00",
-      "endTime": "2024-07-02T21:00:00",
-      "language": "English",
-      "genre": "Rock",
-      "image": "assets/images/rear-view-large-group-music-fans-front-stage-during-music-concert-by-night-copy-space_637285-623.png",
-      "ticketTypes": [
+    "bookings": [
         {
-          "type": "General Admission",
-          "price": 500
+            "id": "id-1723352349234-892",
+            "ufname": "Nikhil",
+            "ulname": "Chauhan",
+            "uemail": "nikhilchauhan3011@gmail.com",
+            "uphone": "9876543211",
+            "uage": "below18",
+            "uTicketType": "700",
+            "uTicketCount": 1,
+            "uCity": "Pune",
+            "eventName": "Jazz Night",
+            "eventTime": "2024-08-15T20:00:00",
+            "eventVenue": "Jazz Club",
+            "eventImage": "assets/images/imageTwo.jpg",
+            "eventLanguage": "English",
+            "paymentStatus": "pending"
         },
         {
-          "type": "VIP",
-          "price": 2000
+            "id": "id-1723353917210-783",
+            "ufname": "Nikhil",
+            "ulname": "Chauhan",
+            "uemail": "nikhilchauhan3011@gmail.com",
+            "uphone": "1123132131",
+            "uage": "18btwn35",
+            "uTicketType": "400",
+            "uTicketCount": 2,
+            "uCity": "Pune",
+            "eventName": "Classical Music Evening",
+            "eventTime": "2024-09-20T19:00:00",
+            "eventVenue": "Classical Music Hall",
+            "eventImage": "assets/images/patterns-by-angry-jalebi-62.png",
+            "eventLanguage": "English",
+            "paymentStatus": "paid"
         },
         {
-          "type": "Early Bird",
-          "price": 1500
+            "id": "id-1723354362717-731",
+            "ufname": "Nikhil",
+            "ulname": "Chauhan",
+            "uemail": "nikhilchauhan3011@gmail.com",
+            "uphone": "1123132131",
+            "uage": "below18",
+            "uTicketType": "700",
+            "uTicketCount": 2,
+            "uCity": "Delhi",
+            "eventName": "Jazz Night",
+            "eventTime": "2024-08-15T20:00:00",
+            "eventVenue": "Jazz Club",
+            "eventImage": "assets/images/imageTwo.jpg",
+            "eventLanguage": "English",
+            "paymentStatus": "paid"
+        },
+        {
+            "id": "id-1723355619506-361",
+            "ufname": "Nikhil",
+            "ulname": "Chauhan",
+            "uemail": "nikhilchauhan3011@gmail.com",
+            "uphone": "1123132131",
+            "uage": "18btwn35",
+            "uTicketType": "600",
+            "uTicketCount": 2,
+            "uCity": "Pune",
+            "eventName": "Pop Festival",
+            "eventTime": "2024-10-10T17:00:00",
+            "eventVenue": "Pop and Banging",
+            "eventImage": "assets/images/imageOne.jpg",
+            "eventLanguage": "English",
+            "paymentStatus": "paid"
+        },
+        {
+            "id": "id-1723355813290-200",
+            "ufname": "Nikhil",
+            "ulname": "Chauhan",
+            "uemail": "nikhilchauhan3011@gmail.com",
+            "uphone": "7677667676",
+            "uage": "below18",
+            "uTicketType": "700",
+            "uTicketCount": 2,
+            "uCity": "Delhi",
+            "eventName": "Jazz Night",
+            "eventTime": "2024-08-15T20:00:00",
+            "eventVenue": "Jazz Club",
+            "eventImage": "assets/images/imageTwo.jpg",
+            "eventLanguage": "English",
+            "paymentStatus": "pending"
         }
-      ],
-      "capacity": 1000,
-      "location": "The Rock Concert Hall",
-      "description": "A thrilling rock concert featuring top bands and an electrifying atmosphere."
-    },
-    {
-      "id": "2",
-      "name": "Jazz Night",
-      "time": "2024-08-15T20:00:00",
-      "endTime": "2024-08-16T21:00:00",
-      "language": "English",
-      "genre": "Jazz",
-      "image": "assets/images/imageTwo.jpg",
-      "ticketTypes": [
+    ],
+    "members": [
         {
-          "type": "Standard",
-          "price": 700
+            "name": "Mr. Sandesh Tribhuvan",
+            "position": "Venue Cordinator",
+            "image": "assets/person.webp",
+            "id": "3fc5"
         },
         {
-          "type": "VIP",
-          "price": 2500
-        }
-      ],
-      "capacity": 300,
-      "location": "Jazz Club",
-      "isBooked": false,
-      "description": "Enjoy a smooth and relaxing evening with live jazz performances."
-    },
-    {
-      "id": "3",
-      "name": "Classical Music Evening",
-      "time": "2024-09-20T19:00:00",
-      "endTime": "2024-09-20T23:00:00",
-      "language": "English",
-      "genre": "Classical",
-      "image": "assets/images/patterns-by-angry-jalebi-62.png",
-      "ticketTypes": [
-        {
-          "type": "General Admission",
-          "price": 400
+            "name": "Mr. Anurag Maldhure",
+            "position": "Onsite Help and Support",
+            "image": "assets/person.webp",
+            "id": "26c4"
         },
         {
-          "type": "VIP",
-          "price": 1800
-        }
-      ],
-      "capacity": 500,
-      "location": "Classical Music Hall",
-      "description": "An elegant evening of classical music featuring renowned orchestras."
-    },
-    {
-      "id": "4",
-      "name": "Pop Festival",
-      "time": "2024-10-10T17:00:00",
-      "endTime": "2024-10-12T21:00:00",
-      "language": "English",
-      "genre": "Pop",
-      "image": "assets/images/imageOne.jpg",
-      "ticketTypes": [
-        {
-          "type": "Participant",
-          "price": 600
+            "name": "Mr. Nikhil Chauhan",
+            "position": "Social Media Manager",
+            "image": "assets/person.webp",
+            "id": "6117"
         },
         {
-          "type": "Observer",
-          "price": 300
+            "name": "Mr. Suryansh Srijan",
+            "position": "Social Media Manager",
+            "image": "assets/person.webp",
+            "id": "d889"
         }
-      ],
-      "capacity": 2000,
-      "location": "Pop and Banging",
-      "isBooked": false,
-      "description": "A vibrant pop festival with top artists and a lively crowd."
-    },
-    {
-      "id": "5",
-      "name": "EDM Party",
-      "time": "2024-11-05T22:00:00",
-      "endTime": "2024-11-05T24:00:00",
-      "language": "English",
-      "genre": "EDM",
-      "image": "assets/images/imageThree.jpg",
-      "ticketTypes": [
+    ],
+    "events": [
         {
-          "type": "General Admission",
-          "price": 600
+            "id": "1",
+            "name": "Rock Concert",
+            "time": "2024-07-01T18:00:00",
+            "endTime": "2024-07-02T21:00:00",
+            "language": "English",
+            "genre": "Rock",
+            "image": "assets/images/rear-view-large-group-music-fans-front-stage-during-music-concert-by-night-copy-space_637285-623.png",
+            "ticketTypes": [
+                {
+                    "type": "General Admission",
+                    "price": 500
+                },
+                {
+                    "type": "VIP",
+                    "price": 2000
+                },
+                {
+                    "type": "Early Bird",
+                    "price": 1500
+                }
+            ],
+            "capacity": 1000,
+            "location": "The Rock Concert Hall",
+            "description": "A thrilling rock concert featuring top bands and an electrifying atmosphere."
         },
         {
-          "type": "VIP",
-          "price": 2500
-        }
-      ],
-      "capacity": 800,
-      "location": "Electric Beats Arena",
-      "isBooked": false,
-      "description": "An exhilarating EDM party with pulsating beats and stunning visuals."
-    },
-    {
-      "id": "6",
-      "name": "Country Music Festival",
-      "time": "2024-12-01T16:00:00",
-      "endTime": "2025-01-02T21:00:00",
-      "language": "English",
-      "genre": "Country",
-      "image": "assets/images/do-not-reuse-Cody-Johnson-cr-Courtesy-Country-Radio-Seminar-billboard-1548.png",
-      "ticketTypes": [
-        {
-          "type": "Standard",
-          "price": 800
+            "id": "2",
+            "name": "Jazz Night",
+            "time": "2024-08-15T20:00:00",
+            "endTime": "2024-08-16T21:00:00",
+            "language": "English",
+            "genre": "Jazz",
+            "image": "assets/images/imageTwo.jpg",
+            "ticketTypes": [
+                {
+                    "type": "Standard",
+                    "price": 700
+                },
+                {
+                    "type": "VIP",
+                    "price": 2500
+                }
+            ],
+            "capacity": 300,
+            "location": "Jazz Club",
+            "isBooked": false,
+            "description": "Enjoy a smooth and relaxing evening with live jazz performances."
         },
         {
-          "type": "VIP",
-          "price": 3000
-        }
-      ],
-      "capacity": 1200,
-      "location": "Wide Open Fields",
-      "isBooked": true,
-      "description": "A fun-filled country music festival with top country artists and bands."
-    },
-    {
-      "id": "7",
-      "name": "Hip-Hop Showcase",
-      "time": "2025-01-15T19:30:00",
-      "endTime": "2025-01-20T21:00:00",
-      "language": "English",
-      "genre": "Hip-Hop",
-      "image": "assets/images/imageFour.jpg",
-      "ticketTypes": [
-        {
-          "type": "General Admission",
-          "price": 550
+            "id": "3",
+            "name": "Classical Music Evening",
+            "time": "2024-09-20T19:00:00",
+            "endTime": "2024-09-20T23:00:00",
+            "language": "English",
+            "genre": "Classical",
+            "image": "assets/images/patterns-by-angry-jalebi-62.png",
+            "ticketTypes": [
+                {
+                    "type": "General Admission",
+                    "price": 400
+                },
+                {
+                    "type": "VIP",
+                    "price": 1800
+                }
+            ],
+            "capacity": 500,
+            "location": "Classical Music Hall",
+            "description": "An elegant evening of classical music featuring renowned orchestras."
         },
         {
-          "type": "VIP",
-          "price": 2800
-        }
-      ],
-      "capacity": 500,
-      "location": "Urban Groove Hall",
-      "isBooked": false,
-      "description": "A high-energy hip-hop showcase with the hottest hip-hop acts."
-    },
-    {
-      "id": "8",
-      "name": "Indie Music Night",
-      "time": "2025-02-20T21:00:00",
-      "endTime": "2025-07-02T21:00:00",
-      "language": "English",
-      "genre": "Indie",
-      "image": "assets/images/rear-view-large-group-music-fans-front-stage-during-music-concert-by-night-copy-space_637285-623.png",
-      "ticketTypes": [
-        {
-          "type": "Standard",
-          "price": 650
+            "id": "4",
+            "name": "Pop Festival",
+            "time": "2024-10-10T17:00:00",
+            "endTime": "2024-10-12T21:00:00",
+            "language": "English",
+            "genre": "Pop",
+            "image": "assets/images/imageOne.jpg",
+            "ticketTypes": [
+                {
+                    "type": "Participant",
+                    "price": 600
+                },
+                {
+                    "type": "Observer",
+                    "price": 300
+                }
+            ],
+            "capacity": 2000,
+            "location": "Pop and Banging",
+            "isBooked": false,
+            "description": "A vibrant pop festival with top artists and a lively crowd."
         },
         {
-          "type": "VIP",
-          "price": 2700
-        }
-      ],
-      "capacity": 700,
-      "location": "Underground Lounge",
-      "isBooked": false,
-      "description": "A night of indie music featuring emerging and popular indie artists."
-    },
-    {
-      "id": "9",
-      "name": "Summer Music Festival",
-      "time": "2024-07-20T16:00:00",
-      "endTime": "2024-07-21T21:00:00",
-      "language": "English",
-      "genre": "Various",
-      "image": "assets/images/imageFour.jpg",
-      "ticketTypes": [
-        {
-          "type": "Standard",
-          "price": 600
+            "id": "5",
+            "name": "EDM Party",
+            "time": "2024-11-05T22:00:00",
+            "endTime": "2024-11-05T24:00:00",
+            "language": "English",
+            "genre": "EDM",
+            "image": "assets/images/imageThree.jpg",
+            "ticketTypes": [
+                {
+                    "type": "General Admission",
+                    "price": 600
+                },
+                {
+                    "type": "VIP",
+                    "price": 2500
+                }
+            ],
+            "capacity": 800,
+            "location": "Electric Beats Arena",
+            "isBooked": false,
+            "description": "An exhilarating EDM party with pulsating beats and stunning visuals."
         },
         {
-          "type": "VIP",
-          "price": 2500
-        }
-      ],
-      "capacity": 1500,
-      "location": "Sunny Fields Park",
-      "isBooked": false,
-      "description": "A summer music festival featuring a variety of genres and artists."
-    },
-    {
-      "id": "10",
-      "name": "Electronic Dance Carnival",
-      "time": "2024-08-10T21:00:00",
-      "endTime": "2024-09-02T21:00:00",
-      "language": "English",
-      "genre": "EDM",
-      "image": "assets/images/patterns-by-angry-jalebi-62.png",
-      "ticketTypes": [
-        {
-          "type": "General Admission",
-          "price": 700
+            "id": "6",
+            "name": "Country Music Festival",
+            "time": "2024-12-01T16:00:00",
+            "endTime": "2025-01-02T21:00:00",
+            "language": "English",
+            "genre": "Country",
+            "image": "assets/images/do-not-reuse-Cody-Johnson-cr-Courtesy-Country-Radio-Seminar-billboard-1548.png",
+            "ticketTypes": [
+                {
+                    "type": "Standard",
+                    "price": 800
+                },
+                {
+                    "type": "VIP",
+                    "price": 3000
+                }
+            ],
+            "capacity": 1200,
+            "location": "Wide Open Fields",
+            "isBooked": true,
+            "description": "A fun-filled country music festival with top country artists and bands."
         },
         {
-          "type": "VIP",
-          "price": 2800
-        }
-      ],
-      "capacity": 2000,
-      "location": "Neon Groove Arena",
-      "isBooked": false,
-      "description": "An exciting electronic dance carnival with top DJs and incredible light shows."
-    },
-    {
-      "id": "11",
-      "name": "Hip-Hop Showcase",
-      "time": "2025-01-15T19:30:00",
-      "endTime": "2025-01-20T21:00:00",
-      "language": "English",
-      "genre": "Hip-Hop",
-      "image": "assets/images/imageThree.jpg",
-      "ticketTypes": [
-        {
-          "type": "General Admission",
-          "price": 550
+            "id": "7",
+            "name": "Hip-Hop Showcase",
+            "time": "2025-01-15T19:30:00",
+            "endTime": "2025-01-20T21:00:00",
+            "language": "English",
+            "genre": "Hip-Hop",
+            "image": "assets/images/imageFour.jpg",
+            "ticketTypes": [
+                {
+                    "type": "General Admission",
+                    "price": 550
+                },
+                {
+                    "type": "VIP",
+                    "price": 2800
+                }
+            ],
+            "capacity": 500,
+            "location": "Urban Groove Hall",
+            "isBooked": false,
+            "description": "A high-energy hip-hop showcase with the hottest hip-hop acts."
         },
         {
-          "type": "VIP",
-          "price": 2800
-        }
-      ],
-      "capacity": 500,
-      "location": "Urban Groove Hall",
-      "isBooked": false,
-      "description": "A high-energy hip-hop showcase with the hottest hip-hop acts."
-    },
-    {
-      "id": "12",
-      "name": "Country Music Festival",
-      "time": "2024-12-01T16:00:00",
-      "endTime": "2025-01-02T21:00:00",
-      "language": "English",
-      "genre": "Country",
-      "image": "assets/images/do-not-reuse-Cody-Johnson-cr-Courtesy-Country-Radio-Seminar-billboard-1548.png",
-      "ticketTypes": [
-        {
-          "type": "Standard",
-          "price": 800
+            "id": "8",
+            "name": "Indie Music Night",
+            "time": "2025-02-20T21:00:00",
+            "endTime": "2025-07-02T21:00:00",
+            "language": "English",
+            "genre": "Indie",
+            "image": "assets/images/rear-view-large-group-music-fans-front-stage-during-music-concert-by-night-copy-space_637285-623.png",
+            "ticketTypes": [
+                {
+                    "type": "Standard",
+                    "price": 650
+                },
+                {
+                    "type": "VIP",
+                    "price": 2700
+                }
+            ],
+            "capacity": 700,
+            "location": "Underground Lounge",
+            "isBooked": false,
+            "description": "A night of indie music featuring emerging and popular indie artists."
         },
         {
-          "type": "VIP",
-          "price": 3000
+            "id": "9",
+            "name": "Summer Music Festival",
+            "time": "2024-07-20T16:00:00",
+            "endTime": "2024-07-21T21:00:00",
+            "language": "English",
+            "genre": "Various",
+            "image": "assets/images/imageFour.jpg",
+            "ticketTypes": [
+                {
+                    "type": "Standard",
+                    "price": 600
+                },
+                {
+                    "type": "VIP",
+                    "price": 2500
+                }
+            ],
+            "capacity": 1500,
+            "location": "Sunny Fields Park",
+            "isBooked": false,
+            "description": "A summer music festival featuring a variety of genres and artists."
+        },
+        {
+            "id": "10",
+            "name": "Electronic Dance Carnival",
+            "time": "2024-08-10T21:00:00",
+            "endTime": "2024-09-02T21:00:00",
+            "language": "English",
+            "genre": "EDM",
+            "image": "assets/images/patterns-by-angry-jalebi-62.png",
+            "ticketTypes": [
+                {
+                    "type": "General Admission",
+                    "price": 700
+                },
+                {
+                    "type": "VIP",
+                    "price": 2800
+                }
+            ],
+            "capacity": 2000,
+            "location": "Neon Groove Arena",
+            "isBooked": false,
+            "description": "An exciting electronic dance carnival with top DJs and incredible light shows."
+        },
+        {
+            "id": "11",
+            "name": "Hip-Hop Showcase",
+            "time": "2025-01-15T19:30:00",
+            "endTime": "2025-01-20T21:00:00",
+            "language": "English",
+            "genre": "Hip-Hop",
+            "image": "assets/images/imageThree.jpg",
+            "ticketTypes": [
+                {
+                    "type": "General Admission",
+                    "price": 550
+                },
+                {
+                    "type": "VIP",
+                    "price": 2800
+                }
+            ],
+            "capacity": 500,
+            "location": "Urban Groove Hall",
+            "isBooked": false,
+            "description": "A high-energy hip-hop showcase with the hottest hip-hop acts."
+        },
+        {
+            "id": "12",
+            "name": "Country Music Festival",
+            "time": "2024-12-01T16:00:00",
+            "endTime": "2025-01-02T21:00:00",
+            "language": "English",
+            "genre": "Country",
+            "image": "assets/images/do-not-reuse-Cody-Johnson-cr-Courtesy-Country-Radio-Seminar-billboard-1548.png",
+            "ticketTypes": [
+                {
+                    "type": "Standard",
+                    "price": 800
+                },
+                {
+                    "type": "VIP",
+                    "price": 3000
+                }
+            ],
+            "capacity": 1200,
+            "location": "Wide Open Fields",
+            "isBooked": true,
+            "description": "A fun-filled country music festival with top country artists and bands."
         }
-      ],
-      "capacity": 1200,
-      "location": "Wide Open Fields",
-      "isBooked": true,
-      "description": "A fun-filled country music festival with top country artists and bands."
-    }
-  ],
-  "registrations": [
-    {
-      "id": "822e",
-      "fName": "Sandesh",
-      "lName": "Tribhuvan",
-      "cCode": "+91",
-      "phoneNumber": "09325926121",
-      "email": "sandeshtribhuvan94@gmail.com",
-      "dob": "2006-06-06",
-      "bloodGroup": "AB+",
-      "emerContact": "7894658795",
-      "ticketType": "VIP_2000",
-      "numTickets": "2",
-      "seatingArea": "FrontRow"
-    },
-    {
-      "id": "b624",
-      "fName": "Nandkishor",
-      "lName": "Tribhuvan",
-      "cCode": "+91",
-      "phoneNumber": "09325926121",
-      "email": "sandeshtribhuvan94@gmail.com",
-      "dob": "2006-06-06",
-      "bloodGroup": "A-",
-      "emerContact": "7894658795",
-      "ticketType": "Early Bird_1500",
-      "numTickets": "2",
-      "seatingArea": "FrontRow"
-    },
-    {
-      "id": "2d6c",
-      "fName": "Sandesh",
-      "lName": "Tribhuvan",
-      "cCode": "+91",
-      "phoneNumber": "09325926121",
-      "email": "sandeshtribhuvan94@gmail.com",
-      "dob": "2006-06-04",
-      "bloodGroup": "AB+",
-      "emerContact": "7894658795",
-      "ticketType": "Early Bird_1500",
-      "numTickets": "5",
-      "seatingArea": "FrontRow"
-    },
-    {
-      "id": "f41f",
-      "fName": "Sandesh",
-      "lName": "Tribhuvan",
-      "cCode": "+91",
-      "phoneNumber": "09325926121",
-      "email": "sandeshtribhuvan94@gmail.com",
-      "dob": "2006-06-06",
-      "bloodGroup": "AB+",
-      "emerContact": "7894658795",
-      "ticketType": "General Admission_500",
-      "numTickets": "2",
-      "seatingArea": "6",
-      "paymentStatus": "panding",
-      "paymentMethod": "unknown"
-    },
-    {
-      "id": "fc34",
-      "fName": "Sandesh",
-      "lName": "Tribhuvan",
-      "cCode": "+91",
-      "phoneNumber": "9325926121",
-      "email": "sandeshtribhuvan94@gmail.com",
-      "dob": "2006-06-02",
-      "bloodGroup": "AB+",
-      "eventName": "2",
-      "eventTime": "8/15/2024, 8:00:00 PM",
-      "ticketType": "Standard_700",
-      "emerContact": "7894658795",
-      "numTickets": "2",
-      "seatingArea": "6",
-      "paymentStatus": "pending",
-      "paymentMethod": "unknown"
-    },
-    {
-      "id": "8557",
-      "fName": "Sandesh",
-      "lName": "Tribhuvan",
-      "cCode": "",
-      "phoneNumber": "9325926121",
-      "email": "sandeshtribhuvan94@gmail.com",
-      "dob": "2006-06-06",
-      "bloodGroup": "AB+",
-      "eventName": "4",
-      "eventTime": "10/10/2024, 5:00:00 PM",
-      "ticketType": "Participant_600",
-      "emerContact": "7894658795",
-      "numTickets": "2",
-      "seatingArea": "FrontRow",
-      "paymentStatus": "pending",
-      "paymentMethod": "unknown"
-    },
-    {
-      "id": "5b6a",
-      "fName": "Sandesh",
-      "lName": "Tribhuvan",
-      "cCode": "+91",
-      "phoneNumber": "9325926121",
-      "email": "sandeshtribhuvan94@gmail.com",
-      "dob": "2006-06-06",
-      "bloodGroup": "B-",
-      "eventName": "2",
-      "eventTime": "8/15/2024, 8:00:00 PM",
-      "ticketType": "Standard_700",
-      "emerContact": "7894658795",
-      "numTickets": "2",
-      "seatingArea": "FrontRow",
-      "paymentStatus": "pending",
-      "paymentMethod": "unknown"
-    },
-    {
-      "id": "0d47",
-      "fName": "Sandesh",
-      "lName": "Tribhuvan",
-      "cCode": "+91",
-      "phoneNumber": "9325926121",
-      "email": "sandeshtribhuvan94@gmail.com",
-      "dob": "2006-06-01",
-      "bloodGroup": "AB-",
-      "eventName": "1",
-      "eventTime": "7/1/2024, 6:00:00 PM",
-      "ticketType": "General Admission_500",
-      "emerContact": "7894658795",
-      "numTickets": "2",
-      "seatingArea": "FrontRow",
-      "paymentStatus": "pending",
-      "paymentMethod": "unknown"
-    },
-    {
-      "id": "1888",
-      "fName": "Sandesh",
-      "lName": "Tribhuvan",
-      "cCode": "+91",
-      "phoneNumber": "9325926121",
-      "email": "sandeshtribhuvan94@gmail.com",
-      "dob": "2006-06-01",
-      "bloodGroup": "AB-",
-      "eventName": "2",
-      "eventTime": "8/15/2024, 8:00:00 PM",
-      "ticketType": "Standard_700",
-      "emerContact": "7894658795",
-      "numTickets": "2",
-      "seatingArea": "FrontRow",
-      "paymentStatus": "pending",
-      "paymentMethod": "unknown"
-    },
-    {
-      "id": "9f68",
-      "fName": "Sandesh",
-      "lName": "Tribhuvan",
-      "cCode": "+93",
-      "phoneNumber": "9325926121",
-      "email": "sandeshtribhuvan94@gmail.com",
-      "dob": "2006-06-06",
-      "bloodGroup": "B+",
-      "eventName": "2",
-      "eventTime": "8/15/2024, 8:00:00 PM",
-      "ticketType": "Standard_700",
-      "emerContact": "7894658795",
-      "numTickets": "3",
-      "seatingArea": "FrontRow",
-      "paymentStatus": "pending",
-      "paymentMethod": "unknown"
-    },
-    {
-      "id": "ef5c",
-      "fName": "Sandesh",
-      "lName": "Tribhuvan",
-      "cCode": "+92",
-      "phoneNumber": "9325926121",
-      "email": "sandeshtribhuvan94@gmail.com",
-      "dob": "2006-06-02",
-      "bloodGroup": "B-",
-      "eventName": "3",
-      "eventTime": "9/20/2024, 7:00:00 PM",
-      "ticketType": "General Admission_400",
-      "emerContact": "7854875",
-      "numTickets": "5",
-      "seatingArea": "6",
-      "paymentStatus": "pending",
-      "paymentMethod": "unknown"
-    },
-    {
-      "id": "23cf",
-      "fName": "Sandesh",
-      "lName": "Tribhuvan",
-      "cCode": "+91",
-      "phoneNumber": "9325926121",
-      "email": "sandeshtribhuvan94@gmail.com",
-      "dob": "2006-06-06",
-      "bloodGroup": "B-",
-      "eventName": "4",
-      "eventTime": "10/10/2024, 5:00:00 PM",
-      "ticketType": "Participant_600",
-      "emerContact": "7894658795",
-      "numTickets": "5",
-      "seatingArea": "FrontRow",
-      "paymentStatus": "pending",
-      "paymentMethod": "unknown"
-    }
-  ]
+    ],
+    "registrations": [
+        {
+            "id": "822e",
+            "fName": "Sandesh",
+            "lName": "Tribhuvan",
+            "cCode": "+91",
+            "phoneNumber": "09325926121",
+            "email": "sandeshtribhuvan94@gmail.com",
+            "dob": "2006-06-06",
+            "bloodGroup": "AB+",
+            "emerContact": "7894658795",
+            "ticketType": "VIP_2000",
+            "numTickets": "2",
+            "seatingArea": "FrontRow"
+        },
+        {
+            "id": "b624",
+            "fName": "Nandkishor",
+            "lName": "Tribhuvan",
+            "cCode": "+91",
+            "phoneNumber": "09325926121",
+            "email": "sandeshtribhuvan94@gmail.com",
+            "dob": "2006-06-06",
+            "bloodGroup": "A-",
+            "emerContact": "7894658795",
+            "ticketType": "Early Bird_1500",
+            "numTickets": "2",
+            "seatingArea": "FrontRow"
+        },
+        {
+            "id": "2d6c",
+            "fName": "Sandesh",
+            "lName": "Tribhuvan",
+            "cCode": "+91",
+            "phoneNumber": "09325926121",
+            "email": "sandeshtribhuvan94@gmail.com",
+            "dob": "2006-06-04",
+            "bloodGroup": "AB+",
+            "emerContact": "7894658795",
+            "ticketType": "Early Bird_1500",
+            "numTickets": "5",
+            "seatingArea": "FrontRow"
+        },
+        {
+            "id": "f41f",
+            "fName": "Sandesh",
+            "lName": "Tribhuvan",
+            "cCode": "+91",
+            "phoneNumber": "09325926121",
+            "email": "sandeshtribhuvan94@gmail.com",
+            "dob": "2006-06-06",
+            "bloodGroup": "AB+",
+            "emerContact": "7894658795",
+            "ticketType": "General Admission_500",
+            "numTickets": "2",
+            "seatingArea": "6",
+            "paymentStatus": "panding",
+            "paymentMethod": "unknown"
+        },
+        {
+            "id": "fc34",
+            "fName": "Sandesh",
+            "lName": "Tribhuvan",
+            "cCode": "+91",
+            "phoneNumber": "9325926121",
+            "email": "sandeshtribhuvan94@gmail.com",
+            "dob": "2006-06-02",
+            "bloodGroup": "AB+",
+            "eventName": "2",
+            "eventTime": "8/15/2024, 8:00:00 PM",
+            "ticketType": "Standard_700",
+            "emerContact": "7894658795",
+            "numTickets": "2",
+            "seatingArea": "6",
+            "paymentStatus": "pending",
+            "paymentMethod": "unknown"
+        },
+        {
+            "id": "8557",
+            "fName": "Sandesh",
+            "lName": "Tribhuvan",
+            "cCode": "",
+            "phoneNumber": "9325926121",
+            "email": "sandeshtribhuvan94@gmail.com",
+            "dob": "2006-06-06",
+            "bloodGroup": "AB+",
+            "eventName": "4",
+            "eventTime": "10/10/2024, 5:00:00 PM",
+            "ticketType": "Participant_600",
+            "emerContact": "7894658795",
+            "numTickets": "2",
+            "seatingArea": "FrontRow",
+            "paymentStatus": "pending",
+            "paymentMethod": "unknown"
+        },
+        {
+            "id": "5b6a",
+            "fName": "Sandesh",
+            "lName": "Tribhuvan",
+            "cCode": "+91",
+            "phoneNumber": "9325926121",
+            "email": "sandeshtribhuvan94@gmail.com",
+            "dob": "2006-06-06",
+            "bloodGroup": "B-",
+            "eventName": "2",
+            "eventTime": "8/15/2024, 8:00:00 PM",
+            "ticketType": "Standard_700",
+            "emerContact": "7894658795",
+            "numTickets": "2",
+            "seatingArea": "FrontRow",
+            "paymentStatus": "pending",
+            "paymentMethod": "unknown"
+        },
+        {
+            "id": "0d47",
+            "fName": "Sandesh",
+            "lName": "Tribhuvan",
+            "cCode": "+91",
+            "phoneNumber": "9325926121",
+            "email": "sandeshtribhuvan94@gmail.com",
+            "dob": "2006-06-01",
+            "bloodGroup": "AB-",
+            "eventName": "1",
+            "eventTime": "7/1/2024, 6:00:00 PM",
+            "ticketType": "General Admission_500",
+            "emerContact": "7894658795",
+            "numTickets": "2",
+            "seatingArea": "FrontRow",
+            "paymentStatus": "pending",
+            "paymentMethod": "unknown"
+        },
+        {
+            "id": "1888",
+            "fName": "Sandesh",
+            "lName": "Tribhuvan",
+            "cCode": "+91",
+            "phoneNumber": "9325926121",
+            "email": "sandeshtribhuvan94@gmail.com",
+            "dob": "2006-06-01",
+            "bloodGroup": "AB-",
+            "eventName": "2",
+            "eventTime": "8/15/2024, 8:00:00 PM",
+            "ticketType": "Standard_700",
+            "emerContact": "7894658795",
+            "numTickets": "2",
+            "seatingArea": "FrontRow",
+            "paymentStatus": "pending",
+            "paymentMethod": "unknown"
+        },
+        {
+            "id": "9f68",
+            "fName": "Sandesh",
+            "lName": "Tribhuvan",
+            "cCode": "+93",
+            "phoneNumber": "9325926121",
+            "email": "sandeshtribhuvan94@gmail.com",
+            "dob": "2006-06-06",
+            "bloodGroup": "B+",
+            "eventName": "2",
+            "eventTime": "8/15/2024, 8:00:00 PM",
+            "ticketType": "Standard_700",
+            "emerContact": "7894658795",
+            "numTickets": "3",
+            "seatingArea": "FrontRow",
+            "paymentStatus": "pending",
+            "paymentMethod": "unknown"
+        },
+        {
+            "id": "ef5c",
+            "fName": "Sandesh",
+            "lName": "Tribhuvan",
+            "cCode": "+92",
+            "phoneNumber": "9325926121",
+            "email": "sandeshtribhuvan94@gmail.com",
+            "dob": "2006-06-02",
+            "bloodGroup": "B-",
+            "eventName": "3",
+            "eventTime": "9/20/2024, 7:00:00 PM",
+            "ticketType": "General Admission_400",
+            "emerContact": "7854875",
+            "numTickets": "5",
+            "seatingArea": "6",
+            "paymentStatus": "pending",
+            "paymentMethod": "unknown"
+        },
+        {
+            "id": "23cf",
+            "fName": "Sandesh",
+            "lName": "Tribhuvan",
+            "cCode": "+91",
+            "phoneNumber": "9325926121",
+            "email": "sandeshtribhuvan94@gmail.com",
+            "dob": "2006-06-06",
+            "bloodGroup": "B-",
+            "eventName": "4",
+            "eventTime": "10/10/2024, 5:00:00 PM",
+            "ticketType": "Participant_600",
+            "emerContact": "7894658795",
+            "numTickets": "5",
+            "seatingArea": "FrontRow",
+            "paymentStatus": "pending",
+            "paymentMethod": "unknown"
+        }
+    ]
 }
