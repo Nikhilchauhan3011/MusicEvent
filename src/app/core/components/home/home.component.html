@@ -49,7 +49,7 @@
                                     <section *ngFor="let money of event.ticketTypes">
 
                                         <p
-                                            *ngIf="money.type === 'Standard' || money.type === 'General Admission' || money.type ==='Observer'">
+                                            *ngIf="money.type === Standard || money.type === General || money.type === Observer">
                                             <span class="card-icon">&#x20B9;</span> {{money.price}}
                                         </p>
                                     </section>
