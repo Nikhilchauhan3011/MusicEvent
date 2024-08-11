@@ -1,0 +1,64 @@
+<nav class="navbar navbar-expand-lg navbar-light mb-3 shadow-lg sticky-top bg-white">
+    <div class="container-fluid">
+
+        <a class="navbar-brand" href="#">
+            <div class="d-flex align-items-center">
+                <img src="../../../../assets/event.png" alt="" width="45" height="50"
+                    class="d-inline-block align-text-top">
+                <div class="fs-3 p-2 fw-bold">
+                    Harmony Hub
+                </div>
+            </div>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav flex-grow-1 justify-content-center">
+                <li class="nav-item mx-3">
+                    <a class="nav-link fw-semibold " aria-current="page" routerLink="/">Home</a>
+                </li>
+                <li class="nav-item mx-3">
+                    <a class="nav-link fw-semibold " routerLink="/reg/booking">Your Bookings</a>
+                </li>
+
+
+                <li class="nav-item mx-3">
+                    <a class="nav-link fw-semibold " routerLink="">Upcoming
+                        Events</a>
+                </li>
+
+                <li class="nav-item mx-3">
+                    <a class="nav-link fw-semibold " routerLink="">About us</a>
+                </li>
+
+                <li class="nav-item mx-3">
+                    <a class="nav-link fw-semibold " routerLink="">Contact us</a>
+                </li>
+
+            </ul>
+
+
+            <div>
+
+
+                <button *ngIf="isLoggedIn" class="btn  fw-medium mx-1 log-profile">Profile</button>
+
+                <button *ngIf="isLoggedIn" class="btn  mx-1 logout" (click)="logout()">Logout</button>
+
+                <button *ngIf="!isLoggedIn" (click)="login()" class="btn fw-medium mx-1 log-profile">Login</button>
+            </div>
+
+
+        </div>
+
+
+
+
+
+
+    </div>
+</nav>

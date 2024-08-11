@@ -1,0 +1,36 @@
+<div class="container-fluid">
+
+
+    <!--  iterating the list of tickets -->
+    <div *ngFor="let event of userEvents">
+
+        <div *ngIf="event.paymentStatus === 'paid'">
+
+            <div class="card mb-3">
+                <div class="row ">
+                    <div class="col-md-4 m-auto">
+
+                        <img src={{event.eventImage}} class="img-fluid rounded-3" alt="">
+
+                    </div>
+                    <div class="col-md-8 px-4">
+                        <div class="card-body">
+                            <p class="card-title fs-5 fw-bold">{{event.eventName}}</p>
+                            <p><i class="fa-solid card-icon fa-location-dot"></i> {{event.eventVenue}}</p>
+                            <p class="card-text fw-semibold">{{event.ufname}} {{event.ulname}}</p>
+                            <p>Date: {{event.eventTime | date}}</p>
+                            <p>Time: {{event.eventTime | date:'shortTime'}}</p>
+                            <p>No. of Tickets: {{event.uTicketCount}}</p>
+                            <p>Language: {{event.eventLanguage}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+</div>

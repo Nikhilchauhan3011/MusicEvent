@@ -1,0 +1,92 @@
+<div class="container-fluid">
+
+
+    <div class="row">
+        <div class="col-md-3"></div>
+
+        <div class="col-md-6 ">
+            <p class="fs-3 fst-italic text-white text-center">Welcome to Harmony Hub</p>
+
+        </div>
+
+        <div class="col-md-3"></div>
+    </div>
+
+
+    <div class="row">
+
+
+        <!-- This column is use to display list of events -->
+        <div class="col-md-12">
+
+            <!-- This is where all the events will get displayed -->
+            <div class="row">
+
+
+
+                <div *ngFor="let event of listOfEvents" class="col mb-3">
+
+                    <div class="card h-100 p-4 rounded-2 shadow-lg" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                        title="{{event.name | uppercase }} : {{event.description}}" style="width: 22rem;;">
+
+                        <img src={{event.image}} class="rounded-2 img-fluid event-image" alt={{event.name}}>
+
+                        <div class="card-body m-1 ">
+                            <p class="card-title fs-5 fw-medium text-truncate">{{event.name}}</p>
+                            <p class="text-truncate fw-light fs-6">{{event.description}}</p>
+
+
+                            <div class="row">
+
+                                <div class="col-md-12">
+
+                                    <p><i class="fa-solid card-icon fa-location-dot"></i> {{event.location}}</p>
+                                </div>
+
+                                <div class="col-md-12">
+
+
+                                    <section *ngFor="let money of event.ticketTypes">
+
+                                        <p
+                                            *ngIf="money.type === 'Standard' || money.type === 'General Admission' || money.type ==='Observer'">
+                                            <span class="card-icon">&#x20B9;</span> {{money.price}}
+                                        </p>
+                                    </section>
+
+                                </div>
+
+
+                            </div>
+
+                            <div class="row">
+
+                                <div class="col-md-12">
+
+                                    <p> <i class="fa-solid fa-guitar card-icon"></i>
+                                        {{event.genre}}</p>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                        <button class="btn btn-light book-button float-end text-white px-5"
+                            routerLink="reg/eventform/{{event.id}}">
+                            Book Now <i class="fa fa-angle-double-right" aria-hidden="true"></i></button>
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+
+        </div>
+
+    </div>
+
+</div>

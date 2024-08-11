@@ -1,0 +1,157 @@
+<div class="container-fluid">
+
+    <div class="row ">
+
+        <div class="col-md-3"></div>
+
+        <div class="col-md-6 mt-5">
+
+            <!-- this is signup form div -->
+            <div class="card p-4">
+                <h2 class="card-title text-center">Signup</h2>
+                <form [formGroup]="signupForm" (ngSubmit)="signup()">
+                    <div class="row">
+
+                        <div class="col-md-6">
+
+                            <div class="mb-3">
+                                <label for="ufname" class="form-label">First Name<span
+                                        class="star-icon">*</span></label>
+                                <input type="ufname" class="form-control" id="ufname" formControlName="ufname"
+                                    placeholder="Enter first name" name="ufname" required>
+
+                                <p
+                                    *ngIf="signupForm.controls['ufname'].touched && !signupForm.controls['ufname'].valid">
+
+                                    <span *ngIf="signupForm.controls['ufname'].hasError('required')">
+                                        Name is required!
+                                    </span>
+
+                                    <span *ngIf="signupForm.controls['ufname'].hasError('pattern')">
+                                        Name is invalid! You must have added some space or digit or special
+                                        character.
+                                    </span>
+
+                                    <span *ngIf="signupForm.controls['ufname'].hasError('minlength')">
+                                        Name should have atleast 4 charcter..!
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+
+                            <div class="mb-3">
+                                <label for="ulname" class="form-label">Last Name<span class="star-icon">*</span></label>
+                                <input type="ulname" class="form-control" id="ulname" formControlName="ulname"
+                                    placeholder="Enter last name" name="ulname" required>
+
+                                <p
+                                    *ngIf="signupForm.controls['ulname'].touched && !signupForm.controls['ulname'].valid">
+
+                                    <span *ngIf="signupForm.controls['ulname'].hasError('required')">
+                                        Last Name is required!
+                                    </span>
+
+                                    <span *ngIf="signupForm.controls['ulname'].hasError('pattern')">
+                                        Last Name is invalid! You must have added some space or digit or special
+                                        character.
+                                    </span>
+
+                                    <span *ngIf="signupForm.controls['ulname'].hasError('minlength')">
+                                        Last Name should have atleast 4 charcter..!
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email address<span class="star-icon">*</span></label>
+                        <input type="email" class="form-control" id="email" formControlName="email"
+                            placeholder="Enter email" name="email" required>
+
+                        <div *ngIf="signupForm.controls['email'].touched && !signupForm.controls['email'].valid">
+
+                            <p *ngIf="signupForm.controls['email'].hasError('required')">
+                                Email is required!
+                            </p>
+
+                            <p *ngIf="signupForm.controls['email'].hasError('pattern')">
+                                Email is invalid!
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+
+                        <div class="col-md-6">
+
+                            <div class="mb-3">
+                                <label for="password" class="form-label">Password<span
+                                        class="star-icon">*</span></label>
+                                <input type="password" class="form-control" id="password" placeholder="Enter password"
+                                    formControlName="password" name="password" required>
+
+                                <div
+                                    *ngIf="signupForm.controls['password'].touched && !signupForm.controls['password'].valid">
+
+                                    <p class="text-break" *ngIf="signupForm.controls['password'].hasError('required')">
+                                        Password is required!
+                                    </p>
+
+                                    <p class="text-break" *ngIf="signupForm.controls['password'].hasError('minlength')">
+                                        Password must be atleast 6 digit long.!
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-md-6">
+
+                            <div class="mb-3">
+                                <label for="cpassword" class="form-label">Confirm Password<span
+                                        class="star-icon">*</span></label>
+                                <input type="password" class="form-control" id="cpassword" placeholder="Enter password"
+                                    formControlName="cpassword" name="cpassword" required>
+
+                                <div
+                                    *ngIf="signupForm.controls['cpassword'].touched && !signupForm.controls['cpassword'].valid">
+
+                                    <p class="text-break" *ngIf="signupForm.controls['cpassword'].hasError('required')">
+                                        Confirm Password is required!
+                                    </p>
+
+                                    <p class="text-break"
+                                        *ngIf="signupForm.get('password')?.value !== signupForm.get('cpassword')?.value">
+                                        Password and Confirm Password must be same.
+                                    </p>
+
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <button type="submit" class="signup btn w-100 text-white mb-2">Signup</button>
+
+                    <p class="already-account-text">Already have an account?
+                        <a routerLink="/reg/" class="login-link">
+                            <span> Login
+                                here. </span></a>
+                    </p>
+
+
+                </form>
+
+            </div>
+
+
+        </div>
+
+        <div class="col-md-3"></div>
+
+    </div>
+
+</div>

@@ -1,0 +1,195 @@
+<div class="container">
+
+    <div class="row">
+
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+            <!-- Payment method -->
+            <form [formGroup]="myGroup">
+
+                <div class="payment-box p-4 border rounded">
+                    <div id="ticketInfo">
+
+                        <p class="fs-4 text-center payment-text"> Payment Method </p>
+
+
+                        <div class="card">
+                            <div class="card-header">
+                                <h5> Hi, {{registeringUserEvent.ufname}}</h5>
+                            </div>
+                            <div class="card-body">
+                                <blockquote class="blockquote mb-0">
+
+                                    <p>Total Ticket : {{ticketCount}}</p>
+                                    <p>Amount to be Paid: {{totalPayment}}</p>
+                                </blockquote>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <!-- All the payment options -->
+                    <div class="mb-3 mt-3">
+                        <label for="paymentMethod" class="form-label text-white">Select Payment Method</label>
+                        <select class="form-select" id="paymentMethod" (change)="onPaymentMethodChange($event)">
+                            <option value="">Select Payment Method</option>
+                            <option value="card">Credit/Debit Card</option>
+                            <option value="netbanking">Net Banking</option>
+                            <option value="upi">UPI</option>
+                        </select>
+                    </div>
+
+                    <div class="card mb-3" *ngIf="paymentMethod === 'card'">
+                        <div class="card-body">
+                            <h5 class="card-title">Card Payment Details</h5>
+                            <div class="row g-2 mb-3">
+
+                                <div class="col mt-2 pt-0">
+                                    <label for="cardPart1" class="form-label"> Card Number</label>
+                                    <input type="text" id="cardPart1" formControlName="cardPart1" maxlength="4"
+                                        class="form-control" placeholder="XXXX"
+                                        [ngClass]="{'is-invalid': myGroup.get('cardPart1')?.invalid && myGroup.get('cardPart1')?.touched}">
+                                    <div *ngIf="myGroup.get('cardPart1')?.invalid && myGroup.get('cardPart1')?.touched"
+                                        class="invalid-feedback">
+                                        Card number is required and must be 4 digits.
+                                    </div>
+                                </div>
+                                <div class="col mt-0 pt-3">
+                                    <label for="cardPart2" class="form-label"></label>
+                                    <input type="text" id="cardPart2" formControlName="cardPart2" maxlength="4"
+                                        class="form-control" placeholder="XXXX"
+                                        [ngClass]="{'is-invalid': myGroup.get('cardPart2')?.invalid && myGroup.get('cardPart2')?.touched}">
+                                    <div *ngIf="myGroup.get('cardPart2')?.invalid && myGroup.get('cardPart2')?.touched"
+                                        class="invalid-feedback">
+                                        Card number is required and must be 4 digits.
+                                    </div>
+                                </div>
+                                <div class="col mt-0 pt-3">
+                                    <label for="cardPart3" class="form-label"> </label>
+                                    <input type="text" id="cardPart3" formControlName="cardPart3" maxlength="4"
+                                        class="form-control" placeholder="XXXX"
+                                        [ngClass]="{'is-invalid': myGroup.get('cardPart3')?.invalid && myGroup.get('cardPart3')?.touched}">
+                                    <div *ngIf="myGroup.get('cardPart3')?.invalid && myGroup.get('cardPart3')?.touched"
+                                        class="invalid-feedback">
+                                        Card number is required and must be 4 digits.
+                                    </div>
+                                </div>
+                                <div class="col mt-0 pt-3">
+                                    <label for="cardPart4" class="form-label"> </label>
+                                    <input type="text" id="cardPart4" formControlName="cardPart4" maxlength="4"
+                                        class="form-control" placeholder="XXXX"
+                                        [ngClass]="{'is-invalid': myGroup.get('cardPart4')?.invalid && myGroup.get('cardPart4')?.touched}">
+                                    <div *ngIf="myGroup.get('cardPart4')?.invalid && myGroup.get('cardPart4')?.touched"
+                                        class="invalid-feedback">
+                                        Card number is required and must be 4 digits.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="cardHolderName" class="form-label">Card Holder Name</label>
+                                <input type="text" class="form-control" id="cardHolderName"
+                                    formControlName="cardHolderName" placeholder="Enter Card Holder's Name : "
+                                    [ngClass]="{'is-invalid': myGroup.get('cardHolderName')?.invalid && myGroup.get('cardHolderName')?.touched}">
+                                <div *ngIf="myGroup.get('cardHolderName')?.invalid && myGroup.get('cardHolderName')?.touched"
+                                    class="invalid-feedback">
+                                    Card holder name is required.
+                                </div>
+
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="expiryDate" class="form-label">Expiry Date</label>
+                                    <input type="text" class="form-control" id="expiryDate" formControlName="expiryDate"
+                                        placeholder="MM/YY"
+                                        [ngClass]="{'is-invalid': myGroup.get('expiryDate')?.invalid && myGroup.get('expiryDate')?.touched}">
+                                    <div *ngIf="myGroup.get('expiryDate')?.invalid && myGroup.get('expiryDate')?.touched"
+                                        class="invalid-feedback">
+                                        Expiry date is required and must be in MM/YY format.
+                                    </div>
+
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="cvv" class="form-label">CVV</label>
+                                    <input type="text" class="form-control" id="cvv" formControlName="cvv"
+                                        placeholder="Enter CVV"
+                                        [ngClass]="{'is-invalid': myGroup.get('cvv')?.invalid && myGroup.get('cvv')?.touched}">
+                                    <div *ngIf="myGroup.get('cvv')?.invalid && myGroup.get('cvv')?.touched"
+                                        class="invalid-feedback">
+                                        CVV is required and must be 3 digits.
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Netbanking Details -->
+                    <div class="card mb-3" *ngIf="paymentMethod === 'netbanking'">
+                        <div class="card-body">
+                            <h5 class="card-title">Netbanking Details</h5>
+                            <div class="mb-3">
+                                <label for="bankName" class="form-label">Bank Name</label>
+                                <input type="text" class="form-control" id="bankName" formControlName="bankName"
+                                    placeholder="Enter your bank name"
+                                    [ngClass]="{'is-invalid': myGroup.get('bankName')?.invalid && myGroup.get('bankName')?.touched}">
+                                <div *ngIf="myGroup.get('bankName')?.invalid && myGroup.get('bankName')?.touched"
+                                    class="invalid-feedback">
+                                    Bank name is required.
+                                </div>
+
+                            </div>
+                            <div class="mb-3">
+                                <label for="accountNumber" class="form-label">Account Number</label>
+                                <input type="text" class="form-control" id="accountNumber"
+                                    formControlName="accountNumber" placeholder="Enter your account number"
+                                    [ngClass]="{'is-invalid': myGroup.get('accountNumber')?.invalid && myGroup.get('accountNumber')?.touched}">
+                                <div *ngIf="myGroup.get('accountNumber')?.invalid && myGroup.get('accountNumber')?.touched"
+                                    class="invalid-feedback">
+                                    Account number is required.
+                                </div>
+
+                            </div>
+                            <div class="mb-3">
+                                <label for="ifscCode" class="form-label">IFSC Code</label>
+                                <input type="text" class="form-control" id="ifscCode" formControlName="ifscCode"
+                                    placeholder="Enter IFSC code"
+                                    [ngClass]="{'is-invalid': myGroup.get('ifscCode')?.invalid && myGroup.get('ifscCode')?.touched}">
+                                <div *ngIf="myGroup.get('ifscCode')?.invalid && myGroup.get('ifscCode')?.touched"
+                                    class="invalid-feedback">
+                                    IFSC code is required and must be in correct format.
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Upi Details -->
+                    <div class="card mb-3" *ngIf="paymentMethod === 'upi'">
+                        <div class="card-body">
+                            <h5 class="card-title">UPI Details</h5>
+                            <div class="mb-3">
+                                <label for="upiId" class="form-label">UPI ID</label>
+                                <input type="text" class="form-control" id="upiId" formControlName="upiId"
+                                    placeholder="Enter your UPI ID"
+                                    [ngClass]="{'is-invalid': myGroup.get('upiId')?.invalid && myGroup.get('upiId')?.touched}">
+                                <div *ngIf="myGroup.get('upiId')?.invalid && myGroup.get('upiId')?.touched"
+                                    class="invalid-feedback">
+                                    UPI ID is required and must be in correct format.
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-grid">
+                        <button id="payButton" class="btn text-white" (click)="processPayment()">Pay</button>
+                    </div>
+
+                </div>
+
+            </form>
+        </div>
+        <div class="col-md-3"></div>
+
+    </div>
+
+</div>

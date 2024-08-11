@@ -1,0 +1,29 @@
+img.event-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+button.book-button {
+    background-color: #DD156D;
+
+}
+
+
+.card-icon {
+    color: #DD156D;
+}
+
+span.card-icon {
+    font-weight: bold;
+}
+
+.card.main :hover {
+    transform: scale(1.02);
+    transition: ease-in-out 0.3s;
+
+    border-width: 3px;
+    border-style: solid;
+    border-color: #DD156D;
+
+}

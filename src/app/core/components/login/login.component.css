@@ -1,0 +1,28 @@
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+    /* Remove default outline */
+    box-shadow: 0 0 5px #DD156D;
+    /* Change the glow color */
+    border-color: #DD156D;
+    /* Optional: Change border color */
+}
+
+p {
+    color: #DD156D;
+}
+
+a.signup-link {
+    text-decoration: none;
+    color: black;
+}
+
+a.forgot-pass {
+    color: #DD156D;
+    text-decoration: none;
+}
+
+button.login-button {
+    background-color: #DD156D;
+}

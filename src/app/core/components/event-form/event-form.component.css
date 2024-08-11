@@ -1,0 +1,20 @@
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+small {
+    color: #DD156D;
+}
+
+span.badge-cap {
+    background-color: #DD156D;
+}
+
+p.validation {
+    color: #DD156D;
+}
+
+button.book-now {
+    background-color: #DD156D;
+}

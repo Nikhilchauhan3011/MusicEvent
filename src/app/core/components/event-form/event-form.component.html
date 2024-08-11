@@ -1,0 +1,279 @@
+<div class="container-fluid">
+
+    <!-- Event Details div -->
+    <div class="row m-2">
+        <div class="col-md-1"></div>
+        <div class="col-md-10 rounded-2 shadow-sm bg-white">
+            <div class="row">
+
+                <!-- Event image -->
+
+                <div class="col-md-5 m-auto">
+                    <img src="{{eventDetail.image}}" alt="" class="rounded-2 img-fluid" style=" height:22rem;">
+
+                </div>
+
+                <!-- Event details -->
+                <div class="col-md-7 p-3">
+
+                    <div class="d-flex mb-2 justify-content-between">
+                        <span class="fs-1 fw-bold">{{eventDetail.name}}</span>
+                        <div>
+                            <span class="badge p-3 text-black rounded-pill fs-6">Seats Available : <span
+                                    class="badge badge-cap rounded-pill text-white fs-6">{{eventDetail.capacity}}</span>
+                            </span>
+                        </div>
+                    </div>
+
+                    <small class="fw-bold">Description</small>
+                    <p class="fw-semibold">
+                        {{eventDetail.description}}
+                    </p>
+
+                    <div class="row">
+
+                        <div class="mb-1"><small class="fw-bold">Details</small></div>
+
+                        <div class="col-md-8">
+
+                            <small class="fw-bold"><small>Start</small></small>
+                            <p class="fw-semibold">{{eventDetail.time | date:'short'}}</p>
+
+
+
+                            <small class="fw-bold"><small>Language</small></small>
+                            <p class="fw-semibold">{{eventDetail.language}}</p>
+
+
+
+                            <small class="fw-bold d-block"><small>Ticket Type's</small></small>
+                            <section *ngFor="let money of eventDetail.ticketTypes">
+                                <small class="fw-medium text-black">
+                                    {{money.type + " "}} &#x20B9;{{ money.price}}
+                                </small>
+                            </section>
+
+
+
+
+                        </div>
+
+                        <div class="col-md-4 mb-2">
+
+                            <small class="fw-bold"><small>End</small></small>
+                            <p class="fw-semibold">{{eventDetail.endTime | date:'short'}}</p>
+
+                            <small class="fw-bold"><small>Location</small></small>
+                            <p class="fw-semibold">{{eventDetail.location}}</p>
+
+                            <small class="fw-bold"><small>Genere</small></small>
+                            <p class="fw-semibold">{{eventDetail.genre}}</p>
+
+
+
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-md-1"></div>
+    </div>
+
+
+    <!-- Event Form -->
+    <div class="row bg-dark p-5">
+        <div class="col-md-1"></div>
+
+        <div class="col-md-5">
+
+
+            <form [formGroup]="formDetail" (submit)="submitData()">
+
+                <div class="mb-2">
+                    <p class="text-white fs-4 text-center">{{eventDetail.name + ' Registration Form'}}</p>
+                </div>
+
+                <div class="form-group mb-3">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label for="uname" class="text-white">First Name<span class="star-icon">*</span></label>
+                            <input type="text" name="ufname" id="ufname" formControlName="ufname" class="form-control"
+                                placeholder="Enter your first name">
+
+                            <div *ngIf="formDetail.controls['ufname'].touched &&  !formDetail.controls['ufname'].valid">
+                                <p *ngIf="formDetail.controls['ufname'].hasError('required')" class="validation">
+                                    First Name is required!
+                                </p>
+                                <p *ngIf="formDetail.controls['ufname'].hasError('pattern')" class="validation">
+                                    First Name is invalid!
+                                </p>
+                            </div>
+
+                        </div>
+                        <div class="col-md-6">
+                            <label for="uname" class="text-white">Last Name<span class="star-icon">*</span></label>
+                            <input type="text" name="ulname" id="ulname" formControlName="ulname" class="form-control"
+                                placeholder="Enter your last name">
+
+                            <div *ngIf="formDetail.controls['ulname'].touched &&  !formDetail.controls['ulname'].valid">
+                                <p *ngIf="formDetail.controls['ulname'].hasError('required')" class="validation">
+                                    Last Name is required!
+                                </p>
+                                <p *ngIf="formDetail.controls['ulname'].hasError('pattern')" class="validation">
+                                    Last Name is invalid!
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label for="uphone" class="text-white">Email<span class="star-icon">*</span></label>
+                    <input type="tel" name="uemail" class="form-control" min="10" max="10" id="uemail"
+                        formControlName="uemail" placeholder="Enter your email">
+
+                    <div *ngIf="formDetail.controls['uemail'].touched && !formDetail.controls['uemail'].valid">
+
+                        <p *ngIf="formDetail.controls['uemail'].hasError('required')" class="validation">
+                            Email is required!
+                        </p>
+
+                        <p *ngIf="formDetail.controls['uemail'].hasError('pattern')" class="validation">
+                            Email is invalid!
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="form-group mb-3">
+                    <label for="uphone" class="text-white">Phone</label>
+                    <input type="tel" name="uphone" class="form-control" id="uphone" formControlName="uphone"
+                        placeholder="Enter your phone number">
+
+                    <p *ngIf="!formDetail.controls['uphone'].valid" class="validation">
+                        Please enter valid phone number!
+                    </p>
+
+                </div>
+
+                <div class=" form-group mb-3">
+                    <label for="uage" class="text-white">Age<span class="star-icon">*</span></label>
+                    <select type="select" name="uage" class="form-select" id="uage" formControlName="uage">
+                        <option value="">Select your age</option>
+                        <option value="below18">Below 18</option>
+                        <option value="18btwn35">Between 18 and 35</option>
+                        <option value="greater35">Above 35</option>
+                    </select>
+
+                    <p *ngIf="formDetail.controls['uage'].touched && !formDetail.controls['uage'].valid"
+                        class="validation">
+                        Please select the age!
+                    </p>
+
+                </div>
+
+                <div class="form-group mb-3">
+                    <label for="uTicketType" class="text-white">Ticket Type<span class="star-icon">*</span></label>
+                    <select type="select" class="form-select" name="uTicketType" id="uTicketType"
+                        formControlName="uTicketType">
+                        <option value="">Select your Ticket type</option>
+                        <option *ngFor="let ticket of eventDetail.ticketTypes" value="{{ticket.price}}">{{ticket.type}}
+                        </option>
+                    </select>
+
+                    <p *ngIf="formDetail.controls['uTicketType'].touched && !formDetail.controls['uTicketType'].valid"
+                        class="validation">
+                        Please select the ticket type!
+                    </p>
+
+                </div>
+
+                <div class="form-group mb-3">
+                    <label for="" class="text-white">No. of Tickets<span class="star-icon">*</span></label>
+                    <input type="number" class="form-control" name="uTicketCount" id="uTicketCount"
+                        formControlName="uTicketCount" placeholder="Enter number of tickets">
+
+                    <div
+                        *ngIf="formDetail.controls['uTicketCount'].touched && !formDetail.controls['uTicketCount'].valid">
+                        <p *ngIf="formDetail.controls['uTicketCount'].hasError('required')" class="validation">
+                            Please enter count.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="form-group mb-4">
+                    <label for="" class="text-white">City</label>
+                    <input type="text" class="form-control" name="uCity" id="uCity" placeholder="Enter your city"
+                        formControlName="uCity">
+
+                    <p *ngIf=" !formDetail.controls['uCity'].valid" class="validation">
+                        Enter Valid city name!
+                    </p>
+                </div>
+
+                <div class="form-group mb-3">
+                    <div class="row">
+                        <div class="col-md-6">
+
+                            <div class="d-grid mb-3">
+                                <button type="submit" class="btn text-white book-now"> Book Now
+                                </button>
+                            </div>
+
+
+                        </div>
+                        <div class="col-md-6">
+
+                            <div class="d-grid mb-3">
+                                <button type="reset" class="btn btn-outline-warning text-white"> Reset
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </form>
+
+
+        </div>
+
+        <!-- Event Members Div -->
+
+        <div class="col-md-6 p-5">
+
+            <div class="row">
+
+                <p class="text-white text-center fs-4">Events Organizers</p>
+
+
+                <div class="col" *ngFor="let member of listOfMembers">
+
+                    <div class="card m-2" data-bs-toggle="tooltip"
+                        title="{{member.name | uppercase }} : {{member.position}}" style="width: 14rem;">
+
+                        <div class="card-body">
+                            <img src="{{member.image}}" alt="" class="img-fluid">
+                            <p class="card-title fw-bold">{{member.name}}</p>
+                            <p class="card-text text-truncate">{{member.position}}</p>
+                            <div class="d-grid">
+                                <button class="btn text-white book-now">Contact</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
